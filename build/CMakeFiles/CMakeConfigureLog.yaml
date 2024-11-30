@@ -1,0 +1,567 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 5.15.153.1-microsoft-standard-WSL2 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/angel/miniforge3/envs/gof/bin/clang 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /home/angel/project/build/CMakeFiles/3.30.4/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/angel/miniforge3/envs/gof/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /home/angel/project/build/CMakeFiles/3.30.4/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV"
+      binary: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV'
+        
+        Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_30243/fast
+        /home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_30243.dir/build.make CMakeFiles/cmTC_30243.dir/build
+        make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV'
+        Building C object CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o
+        /home/angel/miniforge3/envs/gof/bin/clang   -v -MD -MT CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)
+        Target: x86_64-conda-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/angel/miniforge3/envs/gof/bin
+        Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang.cfg
+        Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/home/angel/miniforge3/envs/gof/bin/clang-19" -cc1 -triple x86_64-conda-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV -v -fcoverage-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV -resource-dir /home/angel/miniforge3/envs/gof/lib/clang/19 -dependency-file CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -internal-isystem /home/angel/miniforge3/envs/gof/lib/clang/19/include -internal-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -x c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 19.1.0 based upon LLVM 19.1.0 default target x86_64-conda-linux-gnu
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/angel/miniforge3/envs/gof/lib/clang/19/include
+         /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Linking C executable cmTC_30243
+        /home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30243.dir/link.txt --verbose=1
+        /home/angel/miniforge3/envs/gof/bin/clang  -v -Wl,-v CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -o cmTC_30243
+        clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)
+        Target: x86_64-conda-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/angel/miniforge3/envs/gof/bin
+        Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang.cfg
+        Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld" --sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_30243 /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.43
+        make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/angel/miniforge3/envs/gof/lib/clang/19/include]
+          add: [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/angel/miniforge3/envs/gof/lib/clang/19/include] ==> [/home/angel/miniforge3/envs/gof/lib/clang/19/include]
+        collapse include dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/angel/miniforge3/envs/gof/lib/clang/19/include;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_30243/fast]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_30243.dir/build.make CMakeFiles/cmTC_30243.dir/build]
+        ignore line: [make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV']
+        ignore line: [Building C object CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/clang   -v -MD -MT CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/angel/miniforge3/envs/gof/bin]
+        ignore line: [Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang.cfg]
+        ignore line: [Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/angel/miniforge3/envs/gof/bin/clang-19" -cc1 -triple x86_64-conda-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV -v -fcoverage-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV -resource-dir /home/angel/miniforge3/envs/gof/lib/clang/19 -dependency-file CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -internal-isystem /home/angel/miniforge3/envs/gof/lib/clang/19/include -internal-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -x c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 19.1.0 based upon LLVM 19.1.0 default target x86_64-conda-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/angel/miniforge3/envs/gof/lib/clang/19/include]
+        ignore line: [ /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_30243]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30243.dir/link.txt --verbose=1]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/clang  -v -Wl -v CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -o cmTC_30243]
+        ignore line: [clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/angel/miniforge3/envs/gof/bin]
+        ignore line: [Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang.cfg]
+        ignore line: [Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld" --sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_30243 /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld] ==> ignore
+          arg [--sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_30243] ==> ignore
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o]
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o] ==> obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o]
+          arg [-L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0] ==> dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_30243.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o] ==> obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o]
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+        ignore line: [GNU ld (GNU Binutils) 2.43]
+        ignore line: [make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-6J5vyV']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib64;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/lib;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX"
+      binary: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX'
+        
+        Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_ad9f3/fast
+        /home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_ad9f3.dir/build.make CMakeFiles/cmTC_ad9f3.dir/build
+        make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX'
+        Building CXX object CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o
+        /home/angel/miniforge3/envs/gof/bin/clang++   -v -MD -MT CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)
+        Target: x86_64-conda-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/angel/miniforge3/envs/gof/bin
+        Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang++.cfg
+        Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/home/angel/miniforge3/envs/gof/bin/clang-19" -cc1 -triple x86_64-conda-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX -v -fcoverage-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX -resource-dir /home/angel/miniforge3/envs/gof/lib/clang/19 -dependency-file CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/ -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward -internal-isystem /home/angel/miniforge3/envs/gof/lib/clang/19/include -internal-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 19.1.0 based upon LLVM 19.1.0 default target x86_64-conda-linux-gnu
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++
+         /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu
+         /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward
+         /home/angel/miniforge3/envs/gof/lib/clang/19/include
+         /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include
+        End of search list.
+        Linking CXX executable cmTC_ad9f3
+        /home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad9f3.dir/link.txt --verbose=1
+        /home/angel/miniforge3/envs/gof/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ad9f3
+        clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)
+        Target: x86_64-conda-linux-gnu
+        Thread model: posix
+        InstalledDir: /home/angel/miniforge3/envs/gof/bin
+        Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang++.cfg
+        Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld" --sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ad9f3 /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.43
+        make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++]
+          add: [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu]
+          add: [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward]
+          add: [/home/angel/miniforge3/envs/gof/lib/clang/19/include]
+          add: [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++]
+        collapse include dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/x86_64-conda-linux-gnu]
+        collapse include dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/backward]
+        collapse include dir [/home/angel/miniforge3/envs/gof/lib/clang/19/include] ==> [/home/angel/miniforge3/envs/gof/lib/clang/19/include]
+        collapse include dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        implicit include dirs: [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/x86_64-conda-linux-gnu;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/backward;/home/angel/miniforge3/envs/gof/lib/clang/19/include;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_ad9f3/fast]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_ad9f3.dir/build.make CMakeFiles/cmTC_ad9f3.dir/build]
+        ignore line: [make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX']
+        ignore line: [Building CXX object CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/clang++   -v -MD -MT CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -c /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/angel/miniforge3/envs/gof/bin]
+        ignore line: [Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang++.cfg]
+        ignore line: [Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/angel/miniforge3/envs/gof/bin/clang-19" -cc1 -triple x86_64-conda-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX -v -fcoverage-compilation-dir=/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX -resource-dir /home/angel/miniforge3/envs/gof/lib/clang/19 -dependency-file CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++/ -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward -internal-isystem /home/angel/miniforge3/envs/gof/lib/clang/19/include -internal-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include -internal-isystem /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include -internal-externc-isystem /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 19.1.0 based upon LLVM 19.1.0 default target x86_64-conda-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++]
+        ignore line: [ /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//x86_64-conda-linux-gnu]
+        ignore line: [ /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../gcc/x86_64-conda-linux-gnu/14.1.0/include/c++//backward]
+        ignore line: [ /home/angel/miniforge3/envs/gof/lib/clang/19/include]
+        ignore line: [ /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_ad9f3]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad9f3.dir/link.txt --verbose=1]
+        ignore line: [/home/angel/miniforge3/envs/gof/bin/clang++  -v -Wl -v CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ad9f3]
+        ignore line: [clang version 19.1.0 (https://github.com/conda-forge/clangdev-feedstock c0e07872ac8f75bb8367b3362113eb006e59c3d2)]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/angel/miniforge3/envs/gof/bin]
+        ignore line: [Configuration file: /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-clang++.cfg]
+        ignore line: [Found candidate GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Selected GCC installation: /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld" --sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_ad9f3 /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64 -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64 -L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib -L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o /home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+          arg [/home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld] ==> ignore
+          arg [--sysroot=/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ad9f3] ==> ignore
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o]
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o]
+          arg [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o] ==> obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o]
+          arg [-L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0] ==> dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64]
+          arg [-L/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ad9f3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o] ==> obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o]
+          arg [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o]
+        ignore line: [GNU ld (GNU Binutils) 2.43]
+        ignore line: [make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-N0LISX']
+        ignore line: []
+        ignore line: []
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/Scrt1.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crti.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o]
+        collapse obj [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64/crtn.o] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        collapse library dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0] ==> [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib/../lib64] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib64]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib/../lib64] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64]
+        collapse library dir [/home/angel/miniforge3/envs/gof/bin/../lib/gcc/x86_64-conda-linux-gnu/14.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/Scrt1.o;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crti.o;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtbeginS.o;/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0/crtendS.o;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64/crtn.o]
+        implicit dirs: [/home/angel/miniforge3/envs/gof/lib/gcc/x86_64-conda-linux-gnu/14.1.0;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib64;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib64;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/lib;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/lib;/home/angel/miniforge3/envs/gof/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb"
+      binary: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb'
+        
+        Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_3028e/fast
+        /home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_3028e.dir/build.make CMakeFiles/cmTC_3028e.dir/build
+        make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb'
+        Building C object CMakeFiles/cmTC_3028e.dir/src.c.o
+        /home/angel/miniforge3/envs/gof/bin/clang -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_3028e.dir/src.c.o -MF CMakeFiles/cmTC_3028e.dir/src.c.o.d -o CMakeFiles/cmTC_3028e.dir/src.c.o -c /home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb/src.c
+        Linking C executable cmTC_3028e
+        /home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3028e.dir/link.txt --verbose=1
+        /home/angel/miniforge3/envs/gof/bin/clang CMakeFiles/cmTC_3028e.dir/src.c.o -o cmTC_3028e
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: CMakeFiles/cmTC_3028e.dir/src.c.o: in function `main':
+        src.c:(.text+0x22): undefined reference to `pthread_create'
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x2b): undefined reference to `pthread_detach'
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x34): undefined reference to `pthread_cancel'
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x41): undefined reference to `pthread_join'
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: src.c:(.text+0x50): undefined reference to `pthread_atfork'
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [CMakeFiles/cmTC_3028e.dir/build.make:100: cmTC_3028e] Error 1
+        make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-YSd8Xb'
+        make: *** [Makefile:127: cmTC_3028e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat"
+      binary: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat'
+        
+        Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_c2136/fast
+        /home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_c2136.dir/build.make CMakeFiles/cmTC_c2136.dir/build
+        make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat'
+        Building C object CMakeFiles/cmTC_c2136.dir/CheckFunctionExists.c.o
+        /home/angel/miniforge3/envs/gof/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create -MD -MT CMakeFiles/cmTC_c2136.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_c2136.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_c2136.dir/CheckFunctionExists.c.o -c /home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat/CheckFunctionExists.c
+        Linking C executable cmTC_c2136
+        /home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2136.dir/link.txt --verbose=1
+        /home/angel/miniforge3/envs/gof/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_c2136.dir/CheckFunctionExists.c.o -o cmTC_c2136  -lpthreads
+        /home/angel/miniforge3/envs/gof/bin/x86_64-conda-linux-gnu-ld: cannot find -lpthreads: No such file or directory
+        clang: error: linker command failed with exit code 1 (use -v to see invocation)
+        make[1]: *** [CMakeFiles/cmTC_c2136.dir/build.make:100: cmTC_c2136] Error 1
+        make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-sxsXat'
+        make: *** [Makefile:127: cmTC_c2136/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "build/_deps/googletest-src/googletest/cmake/internal_utils.cmake:66 (find_package)"
+      - "build/_deps/googletest-src/googletest/CMakeLists.txt:83 (config_compiler_and_linker)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV"
+      binary: "/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-NOTFOUND"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV'
+        
+        Run Build Command(s): /home/angel/miniforge3/envs/gof/bin/cmake -E env VERBOSE=1 /home/angel/miniforge3/envs/gof/bin/make -f Makefile cmTC_de773/fast
+        /home/angel/miniforge3/envs/gof/bin/make  -f CMakeFiles/cmTC_de773.dir/build.make CMakeFiles/cmTC_de773.dir/build
+        make[1]: Entering directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV'
+        Building C object CMakeFiles/cmTC_de773.dir/CheckFunctionExists.c.o
+        /home/angel/miniforge3/envs/gof/bin/clang   -DCHECK_FUNCTION_EXISTS=pthread_create -MD -MT CMakeFiles/cmTC_de773.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_de773.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_de773.dir/CheckFunctionExists.c.o -c /home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV/CheckFunctionExists.c
+        Linking C executable cmTC_de773
+        /home/angel/miniforge3/envs/gof/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de773.dir/link.txt --verbose=1
+        /home/angel/miniforge3/envs/gof/bin/clang  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_de773.dir/CheckFunctionExists.c.o -o cmTC_de773  -lpthread
+        make[1]: Leaving directory '/home/angel/project/build/CMakeFiles/CMakeScratch/TryCompile-iD3YZV'
+        
+      exitCode: 0
+...

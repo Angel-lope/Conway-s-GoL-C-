@@ -1,0 +1,16 @@
+name: gof
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - cmake
+  - ninja
+  - make
+  - clangxx
+  - doxygen
+  - pip 
+  - sfml
+  - pip:
+    - breathe
+    - sphinx
