@@ -1,38 +1,44 @@
 [
 {
-  "directory": "/home/angel/project/build/src",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++   -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/angel/project/src/main.cpp",
-  "file": "/home/angel/project/src/main.cpp",
-  "output": "src/CMakeFiles/main.dir/main.cpp.o"
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/src",
+  "command": "/usr/bin/c++ -Dgol4_lib_EXPORTS -I/home/usuario/Conway-s-GoL-C-/include -std=gnu++17 -fPIC -o CMakeFiles/gol4_lib.dir/gol/gol4.cpp.o -c /home/usuario/Conway-s-GoL-C-/src/gol/gol4.cpp",
+  "file": "/home/usuario/Conway-s-GoL-C-/src/gol/gol4.cpp",
+  "output": "src/CMakeFiles/gol4_lib.dir/gol/gol4.cpp.o"
 },
 {
-  "directory": "/home/angel/project/build/tests",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++  -I/home/angel/project/src -I/home/angel/project/include -isystem /home/angel/project/build/_deps/googletest-src/googletest/include -isystem /home/angel/project/build/_deps/googletest-src/googletest -std=gnu++17 -o CMakeFiles/test_some_library.dir/test_main.cpp.o -c /home/angel/project/tests/test_main.cpp",
-  "file": "/home/angel/project/tests/test_main.cpp",
-  "output": "tests/CMakeFiles/test_some_library.dir/test_main.cpp.o"
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/src",
+  "command": "/usr/bin/c++  -I/home/usuario/Conway-s-GoL-C-/include -std=gnu++17 -o CMakeFiles/GameOfLife.dir/gol/main.cpp.o -c /home/usuario/Conway-s-GoL-C-/src/gol/main.cpp",
+  "file": "/home/usuario/Conway-s-GoL-C-/src/gol/main.cpp",
+  "output": "src/CMakeFiles/GameOfLife.dir/gol/main.cpp.o"
 },
 {
-  "directory": "/home/angel/project/build/_deps/googletest-build/googlemock",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++  -I/home/angel/project/build/_deps/googletest-src/googlemock/include -I/home/angel/project/build/_deps/googletest-src/googlemock -isystem /home/angel/project/build/_deps/googletest-src/googletest/include -isystem /home/angel/project/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/angel/project/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
-  "file": "/home/angel/project/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/tests",
+  "command": "/usr/bin/c++  -I/home/usuario/Conway-s-GoL-C-/src -I/home/usuario/Conway-s-GoL-C-/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest -isystem /home/usuario/miniforge3/envs/gof/include -std=gnu++17 -o CMakeFiles/test_gol4.dir/test_gol4.cpp.o -c /home/usuario/Conway-s-GoL-C-/tests/test_gol4.cpp",
+  "file": "/home/usuario/Conway-s-GoL-C-/tests/test_gol4.cpp",
+  "output": "tests/CMakeFiles/test_gol4.dir/test_gol4.cpp.o"
+},
+{
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -I/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/include -I/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
 },
 {
-  "directory": "/home/angel/project/build/_deps/googletest-build/googlemock",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++  -isystem /home/angel/project/build/_deps/googletest-src/googlemock/include -isystem /home/angel/project/build/_deps/googletest-src/googlemock -isystem /home/angel/project/build/_deps/googletest-src/googletest/include -isystem /home/angel/project/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/angel/project/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
-  "file": "/home/angel/project/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
 },
 {
-  "directory": "/home/angel/project/build/_deps/googletest-build/googletest",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++  -I/home/angel/project/build/_deps/googletest-src/googletest/include -I/home/angel/project/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/angel/project/build/_deps/googletest-src/googletest/src/gtest-all.cc",
-  "file": "/home/angel/project/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -I/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/include -I/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
 },
 {
-  "directory": "/home/angel/project/build/_deps/googletest-build/googletest",
-  "command": "/home/angel/miniforge3/envs/gof/bin/clang++  -isystem /home/angel/project/build/_deps/googletest-src/googletest/include -isystem /home/angel/project/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/angel/project/build/_deps/googletest-src/googletest/src/gtest_main.cc",
-  "file": "/home/angel/project/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "directory": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/include -isystem /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest -std=c++17 -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
 }
 ]

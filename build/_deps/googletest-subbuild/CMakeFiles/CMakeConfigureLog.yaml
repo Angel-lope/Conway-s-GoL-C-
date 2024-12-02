@@ -4,8 +4,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "/home/angel/miniforge3/envs/gof/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "/home/usuario/miniforge3/envs/gof/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:16 (project)"
     message: |
-      The system is: Linux - 5.15.153.1-microsoft-standard-WSL2 - x86_64
+      The system is: Linux - 5.15.167.4-microsoft-standard-WSL2 - x86_64
 ...

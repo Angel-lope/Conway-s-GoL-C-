@@ -1,1 +1,0 @@
-/home/angel/miniforge3/envs/gof/bin/clang++ CMakeFiles/test_some_library.dir/test_main.cpp.o -o ../bin/test_some_library  ../lib/libgtest_main.a ../lib/libgtest.a -lpthread

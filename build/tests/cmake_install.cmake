@@ -1,4 +1,4 @@
-# Install script for directory: /home/angel/project/tests
+# Install script for directory: /home/usuario/Conway-s-GoL-C-/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/angel/project/build/_deps/googletest-build/cmake_install.cmake")
+  include("/home/usuario/Conway-s-GoL-C-/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "/home/usuario/Conway-s-GoL-C-/build/tests/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()

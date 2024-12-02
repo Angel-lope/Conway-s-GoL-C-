@@ -1,8 +1,9 @@
 # CMake generated Testfile for 
-# Source directory: /home/angel/project
-# Build directory: /home/angel/project/build
+# Source directory: /home/usuario/Conway-s-GoL-C-
+# Build directory: /home/usuario/Conway-s-GoL-C-/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("src")
 subdirs("tests")
+subdirs("docs")
