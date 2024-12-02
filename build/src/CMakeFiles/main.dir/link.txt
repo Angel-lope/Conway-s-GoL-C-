@@ -1,1 +1,0 @@
-/home/angel/miniforge3/envs/gof/bin/clang++ CMakeFiles/main.dir/main.cpp.o -o ../bin/main
